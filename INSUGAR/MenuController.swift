@@ -8,16 +8,29 @@
 
 import UIKit
 
-class MenuController: UITableViewController {
+class MenuController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource{
 
+    @IBOutlet weak var total: UILabel!
+    @IBOutlet weak var sizePicker: UIPickerView!
+    @IBOutlet weak var menuPicker: UIPickerView!
+    var menuList = Menu()
+    var menulist = Foundation.UserDefaults.standard
+    var menu = ["ข้าวกะเพรา","ข้าวผัด","ข้าวไขเจียว"]
+    var size = ["เล็ก","ธรรมดา","พิเศษ"]
+    var menuselect = [100,150,200]
+    var sizeselect = [1,2,3]
+    var sugar = 100
+    var menuSugar = "ข้าวกะเพรา"
+    var dic = [[String: String]]()
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        self.sizePicker.dataSource = self
+        self.sizePicker.delegate = self
+        self.menuPicker.dataSource = self
+        self.menuPicker.delegate = self
+        menuList.name.append("kawewut")
+        
+        //self.menulist.set("lhsdlfkhlsadf", forKey: "name")
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,63 +38,60 @@ class MenuController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+    @IBAction func saveBtnPress(_ sender: Any) {
     }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+    
+    func  pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return menu[row]
     }
-
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        if(pickerView == menuPicker){
+            return menu.count
+        }else{
+            return size.count
+        }
     }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    
+    
+    func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
+        
+        if(pickerView == menuPicker){
+            let titleData = menu[row]
+            let myTitle = NSAttributedString(string: titleData, attributes: [NSFontAttributeName:UIFont(name: "Georgia", size: 15.0)!,NSForegroundColorAttributeName:UIColor.black])
+            return myTitle
+        }else{
+            let titleData = size[row]
+            let myTitle = NSAttributedString(string: titleData, attributes: [NSFontAttributeName:UIFont(name: "Georgia", size: 15.0)!,NSForegroundColorAttributeName:UIColor.black])
+            return myTitle
+        }
+      
+        
     }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
     }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int){
+        if(pickerView == menuPicker){
+            sugar = menuselect[row]
+            menuSugar = menu[row]
+        }else{
+            sugar *= sizeselect[row]
+        }
+        
+       
     }
-    */
+    
+    @IBAction func saveBtn(_ sender: Any) {
+        if(menulist.object(forKey: "menu") as! [[String : String]] != nil){
+            dic = menulist.object(forKey: "menu") as! [[String : String]]
 
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
+        }
+        dic.append([ "menu": menuSugar, "sugar": String(sugar)])
+        self.menulist.set(dic , forKey: "menu")
+        print("-------------------")
+        print(menulist.object(forKey: "menu"))
     }
-    */
-
     /*
     // MARK: - Navigation
 

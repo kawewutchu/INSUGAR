@@ -7,29 +7,74 @@
 //
 
 import UIKit
+import Firebase
 
-class SingInController: UIViewController {
+class SingInController: UIViewController,UITextFieldDelegate {
 
+    @IBOutlet weak var passwordTextFiled: UITextField!
+    @IBOutlet weak var emailTextFiled: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.navigationController?.isNavigationBarHidden = true
+        self.emailTextFiled.delegate = self
+        self.passwordTextFiled.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+       
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
-    */
+    
+    func  textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.emailTextFiled.resignFirstResponder()
+        self.passwordTextFiled.resignFirstResponder()
+        return true
+    }
 
+    @IBAction func singinAction(_ sender: AnyObject) {
+        if self.emailTextFiled.text == "" || self.passwordTextFiled.text == ""{
+            
+            let alert = UIAlertController(title: "Oops!",
+                                          message: "plase enter username oand password",
+                                          preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel,
+                                          handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+        else{
+            FIRAuth.auth()?.signIn(withEmail: self.emailTextFiled.text! ,
+                                   password: self.passwordTextFiled.text!,
+                                   completion: { (user , Error) in
+                                    
+                    if Error == nil{
+                        
+                         self.performSegue(withIdentifier: "show", sender: self)
+                        self.emailTextFiled.text = ""
+                        self.passwordTextFiled.text = ""
+                        
+                    }
+                    else{
+                        let alert = UIAlertController(title: "Oops!",
+                                                      message: Error?.localizedDescription,
+                                                      preferredStyle: UIAlertControllerStyle.alert)
+                        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel,
+                                                      handler: nil))
+                        self.present(alert, animated: true, completion: nil)
+                       
+                    }
+            })
+        }
+    }
+ 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        if segue.identifier == "show" {
+            
+        }
+    }
+  
 }
+

@@ -1,0 +1,6 @@
+framework module Pods_INSUGAR {
+  umbrella header "Pods-INSUGAR-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -10,6 +10,10 @@ import UIKit
 
 class AllmenuCell: UITableViewCell {
 
+    @IBOutlet weak var value: UILabel!
+    @IBOutlet weak var save: UIButton!
+    @IBOutlet weak var cal: UILabel!
+    @IBOutlet weak var name: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

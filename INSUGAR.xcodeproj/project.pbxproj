@@ -7,14 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45AC76B6E5E59BB0A7FA4A3A /* Pods_INSUGARTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2364A959230C860D556D4824 /* Pods_INSUGARTests.framework */; };
+		C82F4C79E9A53FD790FF92FB /* Pods_INSUGAR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03EDDB2C007450B952513465 /* Pods_INSUGAR.framework */; };
+		DD0636791E6D27D7002ED3DA /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0636781E6D27D7002ED3DA /* MenuController.swift */; };
+		DD09619A1E798156007C3256 /* barController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0961991E798156007C3256 /* barController.swift */; };
+		DD09619C1E7ED188007C3256 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD09619B1E7ED188007C3256 /* TableViewController.swift */; };
+		DD09619E1E7ED1A7007C3256 /* Menu2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD09619D1E7ED1A7007C3256 /* Menu2Controller.swift */; };
+		DD0961A01E7ED43D007C3256 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD09619F1E7ED43D007C3256 /* MenuCell.swift */; };
+		DD1E2FBB1E6C001B00ED1E2E /* KnowledgeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1E2FBA1E6C001B00ED1E2E /* KnowledgeController.swift */; };
+		DD31CEEB1E82BD3500742AAD /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD31CEEA1E82BD3500742AAD /* NewsViewController.swift */; };
+		DD31CEEF1E82F33F00742AAD /* PopVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD31CEEE1E82F33F00742AAD /* PopVc.swift */; };
+		DD31CEF11E85713A00742AAD /* BooldController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD31CEF01E85713A00742AAD /* BooldController.swift */; };
+		DD31CEF31E8572B000742AAD /* BooldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD31CEF21E8572B000742AAD /* BooldCell.swift */; };
+		DD31CEF61E85831100742AAD /* Insurin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD31CEF51E85831100742AAD /* Insurin.swift */; };
+		DD3886AC1EA201E700C9E477 /* ValueController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3886AB1EA201E700C9E477 /* ValueController.swift */; };
 		DD3E65281E694B3100413D0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3E65271E694B3100413D0D /* AppDelegate.swift */; };
-		DD3E652A1E694B3100413D0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3E65291E694B3100413D0D /* ViewController.swift */; };
 		DD3E652D1E694B3100413D0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD3E652B1E694B3100413D0D /* Main.storyboard */; };
 		DD3E65301E694B3100413D0D /* INSUGAR.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD3E652E1E694B3100413D0D /* INSUGAR.xcdatamodeld */; };
 		DD3E65321E694B3100413D0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD3E65311E694B3100413D0D /* Assets.xcassets */; };
 		DD3E65351E694B3100413D0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD3E65331E694B3100413D0D /* LaunchScreen.storyboard */; };
 		DD3E65401E694B3100413D0D /* INSUGARTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3E653F1E694B3100413D0D /* INSUGARTests.swift */; };
 		DD3E654B1E694B3100413D0D /* INSUGARUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3E654A1E694B3100413D0D /* INSUGARUITests.swift */; };
+		DD3E65591E694E5500413D0D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD3E65581E694E5500413D0D /* GoogleService-Info.plist */; };
+		DD3E655B1E6955B800413D0D /* SingInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3E655A1E6955B800413D0D /* SingInController.swift */; };
+		DD3E655D1E6955C800413D0D /* RegesterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3E655C1E6955C800413D0D /* RegesterController.swift */; };
+		DD3E655F1E69BE1D00413D0D /* KnowledgeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3E655E1E69BE1D00413D0D /* KnowledgeCell.swift */; };
+		DD3E65611E69E36300413D0D /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3E65601E69E36300413D0D /* SettingController.swift */; };
+		DDD0CA7D1E96A1B0005FE50C /* ShowHistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD0CA7C1E96A1B0005FE50C /* ShowHistoryController.swift */; };
+		DDF2B6AA1E6AC6BA005241F3 /* CalculatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF2B6A91E6AC6BA005241F3 /* CalculatorController.swift */; };
+		DDF9416C1E73996E006F5AD7 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF9416B1E73996E006F5AD7 /* MainController.swift */; };
+		DDF9416F1E73A81C006F5AD7 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF9416E1E73A81C006F5AD7 /* Menu.swift */; };
+		DDF941711E73AA89006F5AD7 /* AllMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF941701E73AA89006F5AD7 /* AllMenuController.swift */; };
+		DDF941731E73AA9F006F5AD7 /* AllmenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF941721E73AA9F006F5AD7 /* AllmenuCell.swift */; };
+		DE8BC6222ADAF3BB3A1229A0 /* Pods_INSUGARUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5508C9685C7B24BB6245F6E5 /* Pods_INSUGARUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +60,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03EDDB2C007450B952513465 /* Pods_INSUGAR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_INSUGAR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1696AFE63ABCD98542B1C1BC /* Pods-INSUGAR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INSUGAR.release.xcconfig"; path = "Pods/Target Support Files/Pods-INSUGAR/Pods-INSUGAR.release.xcconfig"; sourceTree = "<group>"; };
+		2364A959230C860D556D4824 /* Pods_INSUGARTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_INSUGARTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34CD328EF9F9A2895E7FA0EF /* Pods-INSUGARUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INSUGARUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-INSUGARUITests/Pods-INSUGARUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5508C9685C7B24BB6245F6E5 /* Pods_INSUGARUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_INSUGARUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80BED57474E895D01D4F25C1 /* Pods-INSUGAR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INSUGAR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-INSUGAR/Pods-INSUGAR.debug.xcconfig"; sourceTree = "<group>"; };
+		BEA8642C27DAE9B85D89EDB0 /* Pods-INSUGARTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INSUGARTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-INSUGARTests/Pods-INSUGARTests.release.xcconfig"; sourceTree = "<group>"; };
+		DD0636781E6D27D7002ED3DA /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		DD0961991E798156007C3256 /* barController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = barController.swift; sourceTree = "<group>"; };
+		DD09619B1E7ED188007C3256 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		DD09619D1E7ED1A7007C3256 /* Menu2Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu2Controller.swift; sourceTree = "<group>"; };
+		DD09619F1E7ED43D007C3256 /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		DD1E2FBA1E6C001B00ED1E2E /* KnowledgeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KnowledgeController.swift; sourceTree = "<group>"; };
+		DD31CEEA1E82BD3500742AAD /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		DD31CEEE1E82F33F00742AAD /* PopVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopVc.swift; sourceTree = "<group>"; };
+		DD31CEF01E85713A00742AAD /* BooldController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooldController.swift; sourceTree = "<group>"; };
+		DD31CEF21E8572B000742AAD /* BooldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooldCell.swift; sourceTree = "<group>"; };
+		DD31CEF51E85831100742AAD /* Insurin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Insurin.swift; sourceTree = "<group>"; };
+		DD3886AB1EA201E700C9E477 /* ValueController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueController.swift; sourceTree = "<group>"; };
 		DD3E65241E694B3000413D0D /* INSUGAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = INSUGAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD3E65271E694B3100413D0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DD3E65291E694B3100413D0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DD3E652C1E694B3100413D0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD3E652F1E694B3100413D0D /* INSUGAR.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = INSUGAR.xcdatamodel; sourceTree = "<group>"; };
 		DD3E65311E694B3100413D0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +92,19 @@
 		DD3E65461E694B3100413D0D /* INSUGARUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = INSUGARUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD3E654A1E694B3100413D0D /* INSUGARUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INSUGARUITests.swift; sourceTree = "<group>"; };
 		DD3E654C1E694B3100413D0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD3E65581E694E5500413D0D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DD3E655A1E6955B800413D0D /* SingInController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingInController.swift; sourceTree = "<group>"; };
+		DD3E655C1E6955C800413D0D /* RegesterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegesterController.swift; sourceTree = "<group>"; };
+		DD3E655E1E69BE1D00413D0D /* KnowledgeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KnowledgeCell.swift; sourceTree = "<group>"; };
+		DD3E65601E69E36300413D0D /* SettingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingController.swift; sourceTree = "<group>"; };
+		DDD0CA7C1E96A1B0005FE50C /* ShowHistoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowHistoryController.swift; sourceTree = "<group>"; };
+		DDF2B6A91E6AC6BA005241F3 /* CalculatorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorController.swift; sourceTree = "<group>"; };
+		DDF9416B1E73996E006F5AD7 /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		DDF9416E1E73A81C006F5AD7 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		DDF941701E73AA89006F5AD7 /* AllMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllMenuController.swift; sourceTree = "<group>"; };
+		DDF941721E73AA9F006F5AD7 /* AllmenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllmenuCell.swift; sourceTree = "<group>"; };
+		F3055A40EEAD56D8C79C9EE7 /* Pods-INSUGARUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INSUGARUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-INSUGARUITests/Pods-INSUGARUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F36732C0F2B63E3CBD92805E /* Pods-INSUGARTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INSUGARTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-INSUGARTests/Pods-INSUGARTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C82F4C79E9A53FD790FF92FB /* Pods_INSUGAR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45AC76B6E5E59BB0A7FA4A3A /* Pods_INSUGARTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +128,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE8BC6222ADAF3BB3A1229A0 /* Pods_INSUGARUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		454A210DA0BE83B75027E791 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				80BED57474E895D01D4F25C1 /* Pods-INSUGAR.debug.xcconfig */,
+				1696AFE63ABCD98542B1C1BC /* Pods-INSUGAR.release.xcconfig */,
+				F36732C0F2B63E3CBD92805E /* Pods-INSUGARTests.debug.xcconfig */,
+				BEA8642C27DAE9B85D89EDB0 /* Pods-INSUGARTests.release.xcconfig */,
+				34CD328EF9F9A2895E7FA0EF /* Pods-INSUGARUITests.debug.xcconfig */,
+				F3055A40EEAD56D8C79C9EE7 /* Pods-INSUGARUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		76625FDAC93E94F39104AB3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03EDDB2C007450B952513465 /* Pods_INSUGAR.framework */,
+				2364A959230C860D556D4824 /* Pods_INSUGARTests.framework */,
+				5508C9685C7B24BB6245F6E5 /* Pods_INSUGARUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DD3E651B1E694B3000413D0D = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +165,8 @@
 				DD3E653E1E694B3100413D0D /* INSUGARTests */,
 				DD3E65491E694B3100413D0D /* INSUGARUITests */,
 				DD3E65251E694B3000413D0D /* Products */,
+				454A210DA0BE83B75027E791 /* Pods */,
+				76625FDAC93E94F39104AB3E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,11 +184,14 @@
 			isa = PBXGroup;
 			children = (
 				DD3E65271E694B3100413D0D /* AppDelegate.swift */,
-				DD3E65291E694B3100413D0D /* ViewController.swift */,
+				DDF9416D1E73A4BE006F5AD7 /* Model */,
+				DDF2B6A81E6AC67E005241F3 /* Cell */,
+				DDF2B6A71E6AC649005241F3 /* Controller */,
 				DD3E652B1E694B3100413D0D /* Main.storyboard */,
 				DD3E65311E694B3100413D0D /* Assets.xcassets */,
 				DD3E65331E694B3100413D0D /* LaunchScreen.storyboard */,
 				DD3E65361E694B3100413D0D /* Info.plist */,
+				DD3E65581E694E5500413D0D /* GoogleService-Info.plist */,
 				DD3E652E1E694B3100413D0D /* INSUGAR.xcdatamodeld */,
 			);
 			path = INSUGAR;
@@ -128,6 +215,49 @@
 			path = INSUGARUITests;
 			sourceTree = "<group>";
 		};
+		DDF2B6A71E6AC649005241F3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DD3E655C1E6955C800413D0D /* RegesterController.swift */,
+				DDF2B6A91E6AC6BA005241F3 /* CalculatorController.swift */,
+				DD3886AB1EA201E700C9E477 /* ValueController.swift */,
+				DD3E65601E69E36300413D0D /* SettingController.swift */,
+				DD1E2FBA1E6C001B00ED1E2E /* KnowledgeController.swift */,
+				DD31CEEA1E82BD3500742AAD /* NewsViewController.swift */,
+				DDF941701E73AA89006F5AD7 /* AllMenuController.swift */,
+				DD31CEF01E85713A00742AAD /* BooldController.swift */,
+				DDD0CA7C1E96A1B0005FE50C /* ShowHistoryController.swift */,
+				DD09619D1E7ED1A7007C3256 /* Menu2Controller.swift */,
+				DDF9416B1E73996E006F5AD7 /* MainController.swift */,
+				DD0636781E6D27D7002ED3DA /* MenuController.swift */,
+				DD09619B1E7ED188007C3256 /* TableViewController.swift */,
+				DD3E655A1E6955B800413D0D /* SingInController.swift */,
+				DD0961991E798156007C3256 /* barController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		DDF2B6A81E6AC67E005241F3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DD31CEEE1E82F33F00742AAD /* PopVc.swift */,
+				DD3E655E1E69BE1D00413D0D /* KnowledgeCell.swift */,
+				DD09619F1E7ED43D007C3256 /* MenuCell.swift */,
+				DD31CEF21E8572B000742AAD /* BooldCell.swift */,
+				DDF941721E73AA9F006F5AD7 /* AllmenuCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		DDF9416D1E73A4BE006F5AD7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DDF9416E1E73A81C006F5AD7 /* Menu.swift */,
+				DD31CEF51E85831100742AAD /* Insurin.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +265,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD3E654F1E694B3100413D0D /* Build configuration list for PBXNativeTarget "INSUGAR" */;
 			buildPhases = (
+				ED13EADC2AFFA0E37303275F /* [CP] Check Pods Manifest.lock */,
 				DD3E65201E694B3000413D0D /* Sources */,
 				DD3E65211E694B3000413D0D /* Frameworks */,
 				DD3E65221E694B3000413D0D /* Resources */,
+				AAD72B015CCF53E4397A6013 /* [CP] Embed Pods Frameworks */,
+				62710C21846D2968268D2162 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +285,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD3E65521E694B3100413D0D /* Build configuration list for PBXNativeTarget "INSUGARTests" */;
 			buildPhases = (
+				B0FF3915D1CAC5E7019F482F /* [CP] Check Pods Manifest.lock */,
 				DD3E65371E694B3100413D0D /* Sources */,
 				DD3E65381E694B3100413D0D /* Frameworks */,
 				DD3E65391E694B3100413D0D /* Resources */,
+				3A1A3D37C84176AE0EE42B4B /* [CP] Embed Pods Frameworks */,
+				D8381FFFF0BEB51CE8ECCBF7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +306,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD3E65551E694B3100413D0D /* Build configuration list for PBXNativeTarget "INSUGARUITests" */;
 			buildPhases = (
+				B023DC08D69FE95E1C04C2DD /* [CP] Check Pods Manifest.lock */,
 				DD3E65421E694B3100413D0D /* Sources */,
 				DD3E65431E694B3100413D0D /* Frameworks */,
 				DD3E65441E694B3100413D0D /* Resources */,
+				3624DFEACCFDC7F26DC81F4B /* [CP] Embed Pods Frameworks */,
+				26623198A63E875CA0548034 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -239,6 +378,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD3E65351E694B3100413D0D /* LaunchScreen.storyboard in Resources */,
+				DD3E65591E694E5500413D0D /* GoogleService-Info.plist in Resources */,
 				DD3E65321E694B3100413D0D /* Assets.xcassets in Resources */,
 				DD3E652D1E694B3100413D0D /* Main.storyboard in Resources */,
 			);
@@ -260,14 +400,173 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		26623198A63E875CA0548034 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-INSUGARUITests/Pods-INSUGARUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3624DFEACCFDC7F26DC81F4B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-INSUGARUITests/Pods-INSUGARUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A1A3D37C84176AE0EE42B4B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-INSUGARTests/Pods-INSUGARTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62710C21846D2968268D2162 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-INSUGAR/Pods-INSUGAR-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAD72B015CCF53E4397A6013 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-INSUGAR/Pods-INSUGAR-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B023DC08D69FE95E1C04C2DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B0FF3915D1CAC5E7019F482F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D8381FFFF0BEB51CE8ECCBF7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-INSUGARTests/Pods-INSUGARTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED13EADC2AFFA0E37303275F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DD3E65201E694B3000413D0D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD3E652A1E694B3100413D0D /* ViewController.swift in Sources */,
+				DDF941711E73AA89006F5AD7 /* AllMenuController.swift in Sources */,
+				DD1E2FBB1E6C001B00ED1E2E /* KnowledgeController.swift in Sources */,
+				DDD0CA7D1E96A1B0005FE50C /* ShowHistoryController.swift in Sources */,
+				DD0636791E6D27D7002ED3DA /* MenuController.swift in Sources */,
+				DD09619A1E798156007C3256 /* barController.swift in Sources */,
+				DD3E655D1E6955C800413D0D /* RegesterController.swift in Sources */,
+				DD3E655B1E6955B800413D0D /* SingInController.swift in Sources */,
+				DDF9416C1E73996E006F5AD7 /* MainController.swift in Sources */,
+				DDF9416F1E73A81C006F5AD7 /* Menu.swift in Sources */,
+				DD31CEF31E8572B000742AAD /* BooldCell.swift in Sources */,
+				DDF941731E73AA9F006F5AD7 /* AllmenuCell.swift in Sources */,
+				DDF2B6AA1E6AC6BA005241F3 /* CalculatorController.swift in Sources */,
 				DD3E65301E694B3100413D0D /* INSUGAR.xcdatamodeld in Sources */,
+				DD09619E1E7ED1A7007C3256 /* Menu2Controller.swift in Sources */,
+				DD31CEEF1E82F33F00742AAD /* PopVc.swift in Sources */,
+				DD3E655F1E69BE1D00413D0D /* KnowledgeCell.swift in Sources */,
 				DD3E65281E694B3100413D0D /* AppDelegate.swift in Sources */,
+				DD3886AC1EA201E700C9E477 /* ValueController.swift in Sources */,
+				DD09619C1E7ED188007C3256 /* TableViewController.swift in Sources */,
+				DD31CEF11E85713A00742AAD /* BooldController.swift in Sources */,
+				DD31CEEB1E82BD3500742AAD /* NewsViewController.swift in Sources */,
+				DD0961A01E7ED43D007C3256 /* MenuCell.swift in Sources */,
+				DD31CEF61E85831100742AAD /* Insurin.swift in Sources */,
+				DD3E65611E69E36300413D0D /* SettingController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,12 +716,14 @@
 		};
 		DD3E65501E694B3100413D0D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80BED57474E895D01D4F25C1 /* Pods-INSUGAR.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 66LXTJRV3F;
 				INFOPLIST_FILE = INSUGAR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-.0.INSUGAR";
+				PRODUCT_BUNDLE_IDENTIFIER = com.0.INSUGAR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -430,12 +731,14 @@
 		};
 		DD3E65511E694B3100413D0D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1696AFE63ABCD98542B1C1BC /* Pods-INSUGAR.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 66LXTJRV3F;
 				INFOPLIST_FILE = INSUGAR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-.0.INSUGAR";
+				PRODUCT_BUNDLE_IDENTIFIER = com.0.INSUGAR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -443,6 +746,7 @@
 		};
 		DD3E65531E694B3100413D0D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F36732C0F2B63E3CBD92805E /* Pods-INSUGARTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -458,6 +762,7 @@
 		};
 		DD3E65541E694B3100413D0D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEA8642C27DAE9B85D89EDB0 /* Pods-INSUGARTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -473,6 +778,7 @@
 		};
 		DD3E65561E694B3100413D0D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34CD328EF9F9A2895E7FA0EF /* Pods-INSUGARUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 66LXTJRV3F;
@@ -487,6 +793,7 @@
 		};
 		DD3E65571E694B3100413D0D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3055A40EEAD56D8C79C9EE7 /* Pods-INSUGARUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 66LXTJRV3F;
@@ -518,6 +825,7 @@
 				DD3E65511E694B3100413D0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD3E65521E694B3100413D0D /* Build configuration list for PBXNativeTarget "INSUGARTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +834,7 @@
 				DD3E65541E694B3100413D0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD3E65551E694B3100413D0D /* Build configuration list for PBXNativeTarget "INSUGARUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +843,7 @@
 				DD3E65571E694B3100413D0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

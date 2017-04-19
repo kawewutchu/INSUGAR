@@ -10,43 +10,60 @@ import UIKit
 
 class KnowledgeController: UITableViewController {
 
+    @IBOutlet var k: UITableView!
+    
+    var list = ["แนะผู้ป่วยเบาหวานกินปลา ชี้ให้คุณค่าอาหารสูง",
+                 "แนวทางดูแลรักษาผู้ป่วยโรคเบาหวานที่ขา/เท้า โดยมีข้อปฏิบัติแนะนำดังนี้",
+                 "เบาหวานจอประสาทตา รู้เร็ว ป้องกัน รักษาได้",
+                 "โสมไทยทางเลือกของเบาหวาน"
+    ]
+    var imagename = ["1.jpg","3.jpg","4.jpg","5.jpg"]
+    var index = 0;
+    @IBOutlet weak var SearchBar: UISearchBar!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        self.tableView.separatorStyle = .none
+        self.k.delegate = self
+        self.k.dataSource = self
+      
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+      
     }
+    
+       
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        
+        return 4
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! KnowledgeCell
+        if(indexPath.row < list.count){
+            cell.View.backgroundColor = UIColor.white
+            cell.Label.text = list[indexPath.row]
+            cell.k.image = UIImage(named: imagename[indexPath.row])
 
-        // Configure the cell...
-
+        }
+       
         return cell
     }
-    */
-
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("You selected cell #\(indexPath.row)!")
+        index = indexPath.row
+        self.performSegue(withIdentifier: "show", sender: self)
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -82,14 +99,17 @@ class KnowledgeController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "show" {
+            if let NewsViewController: NewsViewController = segue.destination as? NewsViewController {
+                NewsViewController.type = index
+            }
+        }
     }
-    */
+    
 
 }

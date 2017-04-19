@@ -9,5 +9,13 @@
 import UIKit
 
 class Insurin: NSObject {
-
+    var Date: String?
+    var Time: String?
+    var UnitShort: String?
+    var Short: String?
+    var UnitLong: String?
+    var Long: String?
+    var Sugar: String?
+    var Id: String?
+ 
 }

@@ -9,6 +9,14 @@
 import UIKit
 
 class KnowledgeCell: UITableViewCell {
+   
+    
+    @IBOutlet weak var K2: UIImageView!
+    @IBOutlet weak var TextView: UITextView!
+    @IBOutlet weak var k: UIImageView!
+        @IBOutlet weak var View: UIView!
+    @IBOutlet weak var Label: UILabel!
+      
 
     override func awakeFromNib() {
         super.awakeFromNib()

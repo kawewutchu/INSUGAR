@@ -2,21 +2,35 @@
 //  AppDelegate.swift
 //  INSUGAR
 //
-//  Created by Kawewut Chujit on 3/3/2560 BE.
+//  Created by kritsada sangmoon on 3/3/2560 BE.
 //  Copyright © 2560 kritsada sangmoon. All rights reserved.
 //
 
 import UIKit
 import CoreData
-
+import Firebase
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var storyboard: UIStoryboard?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+      
+        
+        FIRApp.configure()
+        let currentUser = FIRAuth.auth()?.currentUser
+        self.storyboard =  UIStoryboard(name: "Main", bundle: Bundle.main)
+        if currentUser != nil
+        {
+            self.window?.rootViewController = self.storyboard?.instantiateViewController(withIdentifier: "tabbar")
+        }
+        else
+        {
+            self.window?.rootViewController = self.storyboard?.instantiateViewController(withIdentifier: "SingIn")
+        }
+        
+        
         return true
     }
 

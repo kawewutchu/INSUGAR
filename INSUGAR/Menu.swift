@@ -9,5 +9,6 @@
 import UIKit
 
 class Menu: NSObject {
-
+    var name = [String()]
+    var cal = [String()]
 }

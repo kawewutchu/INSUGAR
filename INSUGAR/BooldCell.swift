@@ -10,6 +10,8 @@ import UIKit
 
 class BooldCell: UITableViewCell {
 
+    @IBOutlet weak var insulin: UILabel!
+    @IBOutlet weak var date: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

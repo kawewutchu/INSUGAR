@@ -9,7 +9,8 @@
 import UIKit
 
 class MainController: UIViewController {
-
+    var window: UIWindow?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,8 +21,22 @@ class MainController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+   
+    @IBAction func CAL(_ sender: Any) {
+        self.tabBarController?.selectedIndex = 1
+    }
 
+    @IBAction func BLOOD(_ sender: Any) {
+        self.tabBarController?.selectedIndex = 3
+        
+    }
+    @IBAction func NEWS(_ sender: Any) {
+        self.tabBarController?.selectedIndex = 2
+        
+    }
+    @IBAction func SETTING(_ sender: Any) {
+        self.tabBarController?.selectedIndex = 4
+    }
     /*
     // MARK: - Navigation
 
