@@ -24,6 +24,7 @@ class AllMenuController: UIViewController, UITableViewDelegate,UITableViewDataSo
     override func viewDidLoad() {
         super.viewDidLoad()
         print(type)
+        tableView.tableFooterView = UIView(frame: .zero)
         if(type == "food"){
             var test = Menu()
             valueLbl.text = "ปริมาณ"
